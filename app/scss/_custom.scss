@@ -1,0 +1,27 @@
+/* Color Theme Swatches in Hex */
+$cam-shp-1: #8C3027;
+$cam-shp-2: #A68A37;
+$cam-shp-3: #402813;
+$cam-shp-4: #3c6309;
+$cam-shp-5: #6b251c;
+$cam-shp-white:#fffce2;
+$cam-shp-black:#0D0D0D;
+
+$custom-colors: ( 
+    "primary": $cam-shp-1,
+    "secondary": $cam-shp-2, 
+    "info": $cam-shp-3, 
+    "success": $cam-shp-4,
+    "warning":$cam-shp-5,
+    "white":$cam-shp-white,
+    "black":$cam-shp-black);
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$theme-colors: map-remove($theme-colors,"primary","secondary","success","info","warning","white","black");
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
