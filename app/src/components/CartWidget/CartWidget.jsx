@@ -5,7 +5,7 @@ const CartWidget = ({productCount = 0}) =>{
         <form className='d-flex' role='cart'>
           <div>
             <img src={cart} alt='cart-widget'></img>
-            <span className="position-absolute top-5 start-90 translate-middle badge rounded-pill bg-info">{productCount}<span className="visually-hidden">Productos</span></span>
+            <span className="position-absolute top-5 start-90 translate-middle badge rounded-pill bg-danger">{productCount}<span className="visually-hidden">Productos</span></span>
           </div>
         </form>
     )
