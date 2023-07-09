@@ -1,0 +1,18 @@
+.notification{
+    position:absolute;
+    width: 25em;
+    top: 50em;
+    right: 3em;
+    background-color: grey;
+    color:white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    z-index:10
+}
+.notification-success{
+    background-color: green;
+}
+
+.notification-danger{
+    background-color: darkred;
+}
